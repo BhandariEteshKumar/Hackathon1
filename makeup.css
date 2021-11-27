@@ -40,12 +40,13 @@ h2 {
     text-shadow: none;
   }
 }
-.stock-collection {
+.makeup-collection {
   display: flex;
   flex-wrap: wrap;
   padding: 2px 16px;
   position: relative;
   place-items: center;
+  margin-top: 8rem;
 }
 
 button {
@@ -58,10 +59,11 @@ button {
     height: fit-content;
     background: transparent;
     color: #fff;
+    margin-top: 15%;
     background-color: rgb(243, 243, 243);
   }
   .makeup-collection {
-    margin-top: 10rem;
+    margin-top: 14rem !important;
   }
   body {
     background-size: cover;
