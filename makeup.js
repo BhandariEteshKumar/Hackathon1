@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const productDiv = document.createElement("div");
       productDiv.className = "row product";
       productDiv.innerHTML = `
-    <img class="col w-25 d-inline-block" src="${product.image_link}" onerror="this.onerror=null; this.src='${product.api_featured_image}'" alt="">`;
+    <img class="col w-25 d-inline-block" src="${product.api_featured_image}" onerror="this.onerror=null; this.src='${product.image_link}'" alt="">`;
       makeupCollection.appendChild(productDiv);
       const innerDiv = document.createElement("div");
       innerDiv.className = "col";
