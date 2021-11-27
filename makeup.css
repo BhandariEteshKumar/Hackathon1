@@ -1,0 +1,156 @@
+body {
+  background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/topstrips14.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  color: #fff;
+  /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
+  animation: flicker 0.2s infinite alternate;
+  /* color: #fff; */
+}
+h2 {
+  display: inline-block;
+  font-size: 2rem;
+  animation: flicker 0.2s infinite alternate;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+  margin-left: 40%;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px pink,
+      0 0 80px pink, 0 0 90px pink, 0 0 100px pink, 0 0 150px palevioletred;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+.stock-collection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 16px;
+  position: relative;
+  place-items: center;
+}
+
+button {
+  width: fit-content;
+}
+
+@media screen and (min-width: 257px) and (max-width: 576px) {
+  .product {
+    width: auto;
+    height: fit-content;
+    background: transparent;
+    color: #fff;
+    background-color: rgb(243, 243, 243);
+  }
+  .makeup-collection {
+    margin-top: 10rem;
+  }
+  body {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 256px) {
+  .makeup-collection {
+    margin-top: 14rem !important;
+  }
+  div {
+    margin: 0 !important;
+  }
+  header {
+    justify-content: center;
+  }
+  .row {
+    padding: 0 !important;
+    width: auto !important;
+  }
+  body {
+    background-size: cover;
+  }
+}
+
+.product {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px black;
+  width: 90%;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 2rem;
+  flex-wrap: wrap;
+  background-color: rgb(243, 243, 243);
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+  height: 18rem auto;
+  border-radius: 2px;
+  background-size: cover;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.EQUNd15up39HcrPEuBYnpAHaE8%26pid%3DApi&f=1");
+}
+
+.product:nth-child(odd) {
+  color: #000;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK17Vko8HYtCrkIC2wXYv1yBtJSGdBm-ePwg&usqp=CAU");
+}
+
+img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: orange;
+  transform: scale(1.1);
+  background-size: cover;
+  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffw800%2Fbackground%2F20191116%2Fpngtree-stock-market-data-index-background-image_322384.jpg&f=1&nofb=1"); */
+}
+
+img {
+  width: 30% !important;
+  height: 18rem;
+}
+
+div {
+  margin: 4rem;
+}
+
+button {
+  background: transparent;
+  color: orange;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: none;
+}
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  background: orange !important;
+  box-shadow: 0 5px 15px rgba(145, 197, 4, 0.4);
+  transform: scale(1.1);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  justify-content: left;
+}
+
+div ul {
+  background: none !important;
+}
