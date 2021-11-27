@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     } else {
       products.map((product) => {
-        if (parseInt(product.price) < parseInt(condition))
+        if (parseInt(product.price) <= parseInt(condition))
           renderProduct(product);
       });
     }
